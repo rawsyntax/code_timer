@@ -14,13 +14,13 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "tool"
-  gem.homepage = "http://github.com/rawsyntax/tool"
+  gem.name = "CodeTimer"
+  gem.homepage = "http://github.com/rawsyntax/code_timer"
   gem.license = "MIT"
-  gem.summary = %Q{A}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A tool for roughly and quickly measuring your slow code}
+  gem.description = %Q{A tool for roughly and quickly measuring your slow code}
   gem.email = "eric@rawsyntax.com"
-  gem.authors = ["Eric"]
+  gem.authors = ["Eric Himmelreich"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -43,7 +43,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "tool #{version}"
+  rdoc.title = "CodeTimer #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
