@@ -15,9 +15,7 @@ class CodeTimer
     stop if @timing
 
     total  = @sections.map {|k, v| v}.reduce(:+)
-    output = ""
-
-    output += "Total Time: #{total}s\n"
+    output = "Total Time: #{total}s\n"
 
     @sections.each do |k, v|
       output += "#{k}:\t #{(v / total.to_f * 100).to_i}% / #{v}s\n"
