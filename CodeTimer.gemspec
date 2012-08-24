@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eric Himmelreich"]
-  s.date = "2012-08-23"
+  s.date = "2012-08-24"
   s.description = "A tool for roughly and quickly measuring your slow code"
   s.email = "eric@rawsyntax.com"
   s.extra_rdoc_files = [
