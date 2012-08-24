@@ -1,4 +1,4 @@
-= CodeTimer
+# CodeTimer
 
 A tool for roughly and quickly measuring your slow code.  This is not
 intended to be a sophisticated tool, but rather a quick off the cuff
@@ -28,10 +28,19 @@ Which returns a formmated string containing the results:
     Part3:	 47% / 8s
     Part4:	 11% / 2s
 
-As seen above, the slowest portion of the code is between the Part3 and Part4 markers.
+As seen above, the slowest portion of the code is between the Part3
+and Part4 markers.
 
-== Contributing to tool
- 
+## Why not use [Benchmark](http://ruby-doc.org/stdlib-1.9.3/libdoc/benchmark/rdoc/Benchmark.html)?
+
+I tried Benchmark first, but the block structure required too much
+rewriting of code due to scope issues (variable declarations etc).
+Also, I was more concerned with how fast the various sections are
+compared to each other, which CodeTimer does automatically.
+
+
+## Contributing to tool
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
@@ -40,7 +49,7 @@ As seen above, the slowest portion of the code is between the Part3 and Part4 ma
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-== Copyright
+## Copyright
 
 Copyright (c) 2012 Eric Himmelreich. See LICENSE.txt for
 further details.
